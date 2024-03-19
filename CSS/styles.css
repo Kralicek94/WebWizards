@@ -9,11 +9,24 @@ body {
 #navBar {
     top: 0;
     position: fixed;
-    display: block;
+    display: inline-block;
     width: 100%;
     height: 9%;
     background-color: rgb(2, 56, 87);
     text-align: center;
+}
+#logoTab {
+    display: block;
+    width: 25%;
+    height: auto;
+    border: solid black 1px;
+}
+#subPagesTab {
+    display: block;
+    width: 75%;
+    height: auto;
+    border: double red 1px;
+    margin-left: 25%;
 }
 #dropDown {
     display: inline-block;
@@ -28,21 +41,21 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 50%;
     margin-top: 4px;
     margin-bottom: 3px;
     border-radius: 50%;
 }
 .dropDown {
     display: inline-block;
-    background-color: black;
+    background-color: rgb(196, 173, 173);
     width: 100%;
     border: none;
     cursor: pointer;
 }
 .dropDown:hover {
     animation-name: navButtonHover;
-    animation-duration: 500ms;
+    transition-duration: 500ms;
     background-color: rgb(88, 88, 88);
 }
 @keyframes navButtonHover {
@@ -59,7 +72,6 @@ body {
     border: none;
 }
 #dropDown {
-    position: relative;
     display: inline-block;
 }
 .DropBtnContent {
